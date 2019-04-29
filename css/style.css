@@ -1,0 +1,665 @@
+body {
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+    color:#ffffff;
+    line-height: 1.6; 
+}
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1534px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+/* header */
+
+.header {
+    width:100%;
+    padding-top: 32px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1000;
+}
+.header_inner {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_logo{
+     background: url(../images/logo.jpg) no-repeat;
+   
+  width: 167px;
+  height: 60px;
+}
+.header_number{
+    justify-content: center;
+    font-size: 21px;
+     font-weight: 800;
+    border: 3px solid ; 
+    padding: 12px ; 
+}
+.nav{
+
+    font-weight: 800;
+    text-transform: uppercase;
+    
+}
+.nav_link{
+    display:inline-block;
+    vertical-align:top;
+    margin:0 60px;
+    position:relative;
+    color:#ffffff;
+    text-decoration: none;
+    transition: color .1s linear;
+    
+}
+.nav_link:hover{
+    color:#d580f5;
+}
+/* Intro */
+.intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/1.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    
+}
+
+.intro_inner{
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+.intro_title{
+  
+    font-size: 60px;
+     font-weight: 800;
+    text-transform: uppercase;
+     line-height: 1.2; 
+       margin: 0px;
+    letter-spacing:0.04em;
+}
+.intro_undertitle{
+       margin: 5px;
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+
+
+
+.dots_inner{
+    max-width: 150px;
+    position: absolute;
+    bottom:22px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    
+}
+.dots_inner
+{
+       display: flex;
+  align-items: center;
+  justify-content: center
+}
+.dots_item {
+    margin: 12px;
+    cursor: pointer !important;
+    height :22px;
+    width :22px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0.5;
+}
+
+.active{
+    background-color: #cb5ef4;
+}
+
+
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px;
+    border: 2px solid #cb5ef4;
+    background:#cb5ef4;
+    border-radius: 5px;
+    color:#ffffff;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 20px;
+    transition: background .1s linear, color .1s linear;
+    
+}
+.btn:hover {
+     background-color: #ffffff;
+   border:2px solid #ffffff;
+    color:#cb5ef4;
+    
+}
+/*slider обязательно почистить код для выравнивания и удалить лишний код*/
+
+
+
+
+
+/*section why we*/
+.section
+{  
+    padding:60px 0px 80px 0px;
+    
+}
+.section_head
+{
+   width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.section_header{
+
+    color:#cb5ef4;
+    font-size: 38px;
+    font-weight: 600;
+   margin: 0;
+    border: 3px solid ; 
+    padding: 6px ; 
+}
+.adv{
+  
+    display: flex;
+    justify-content:center;
+    
+}
+.adv_item{
+     display: flex;
+    width: 30%;
+    margin-right: 15px;
+    
+}
+.adv_item:nth-child(2){
+    margin-right: -15px;
+}
+.adv_icon{
+    padding-right: 16px;
+}
+.adv_subs{
+    
+}
+.adv_title, .order_title,.portfolio_title{
+    color: black;
+    font-weight: 800;
+    font-size: 25px;
+    
+}
+
+.adv_text,.order_text{
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+}
+
+
+
+/*tutorial*/
+.tutorial{
+    background-color:#cb5ef4;
+    height: 667px;
+     width: 100%;
+
+   
+   }
+
+.tutorial_half{
+    display: flex;
+}
+.tutorial_half:last-child{
+    position:absolute;
+    right: 0px;
+    
+}
+.tutorial_inner{
+    
+   width: 802px;
+    padding-top: 65px;
+}
+.tutorial_title,.portfolio_header,.feedback_header{
+    font-size:36px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+}
+.tutorial_title:after{
+    content: "";
+    display: block;
+    width:474px;
+    height:4px; 
+    background-color:white;
+  
+}
+.order{
+    padding-left: 80px;
+    margin-top: 41px;
+}
+.order_items{
+    margin-bottom: 20px;
+   
+     display: flex;
+    
+    
+}
+.order_icon{
+    margin-right: 18px;
+}
+.order_tutorial{
+    
+}
+.order_title {
+    color: white;
+    
+}
+.order_text{
+    color: white;
+    margin-top:5px;
+    
+}
+.tutorial_img{
+     
+}
+.tutorial_img img{
+      
+}
+
+
+/*portfolio*/
+.portfolio{
+    width: 100%;
+  padding-bottom: 108px;  
+}
+.portfolio_header{
+    color:#cb5ef4;
+    text-align: center;
+   margin-bottom: 46px;
+}
+.portfolio_desk{
+    
+  position: relative;
+}
+.reviews__btn {
+    font-size: 0;
+    color: transparent;
+
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.reviews__btn:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #cb5ef4;
+    border-left: 2px solid #cb5ef4;
+}
+.reviews__btn:hover{
+   border-top: 3px solid #cb5ef4;
+    border-left: px solid #cb5ef4;
+    
+}
+
+.reviews__btn--prev {
+    left: 20px;
+    transform: rotate(-45deg);
+}
+
+.reviews__btn--next {
+    right: 20px;
+    transform: rotate(135deg);
+}
+
+.portfolio_items{
+    margin-right: 128px;
+    margin-bottom: 36px;
+}
+.portfolio_items:last-child{
+    margin-right: 0px;
+   
+}
+.portfolio_rows{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+
+    
+}
+.row1,.row2{
+    display: flex;
+    align-items: center
+}
+.portfolio_title,.portfolio_text{
+   color:#cb5ef4;
+    text-align: center;
+  
+}
+.portfolio_text{
+    margin-top: 5px;
+    line-height: 1.2em;
+}
+
+
+
+
+
+/*feedback*/
+.feedback{
+   padding-top: 1px; /*так почему-то работает отступ у хэдера*/
+    background-color: #cb5ef4;
+}
+.feedback_header{
+  color:#cb5ef4;
+  background-color: white;
+  text-align: center;
+  width: 255px;
+  height: 65px;
+  border-radius: 15px 0px 15px 0px;
+  padding-top: 2px; 
+    margin: 36px auto 36px auto;
+    
+   
+}
+.feedback_inner{
+   padding-left: 160px;
+}
+.feedback_items{
+    display: flex;
+  border-radius: 17px;
+  background-color: white;
+  width:90%;
+  height: 226px;
+  padding: 30px;
+    margin-bottom: 40px;
+}
+.feedback_img{
+   margin-right: 15px; 
+}
+.feedback_content{
+    
+}
+.feedback_title{
+  border-width: 1.22px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 8px;
+  width: 475px;
+  height: 100%;
+    color:black;
+   font-size: 26px;
+    font-weight: 600;
+  text-align: center;
+}
+.colortext{
+        color:#cb5ef4;
+}
+.feedback_text{
+    margin-top: 14px;
+   color:black;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.feedback_slider{
+    max-width: 150px;
+    left: 50%;
+    
+    
+    
+}
+.fdbslider_inner{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    padding-bottom: 35px;
+}
+
+
+
+
+/*contacts*/
+.contacts{
+    position: relative;
+    padding-top:0px;
+}
+.contacts_inner{
+   
+    position: relative;
+}
+.contacts_header{
+    padding-top: 2px;
+    top: 20px;
+    left:50%;
+    margin-left:-110px;
+    position: absolute;
+    z-index: 1000;
+    font-size:36px;
+    font-weight: 800;
+    color: #cb5ef4;
+    text-transform: uppercase;
+    text-align: center;
+    border-width: 3px;
+    border-color: #cb5ef4;
+    border-style: solid;
+    border-radius: 25px;
+    width: 240px;
+    height: 70px;
+ 
+    
+}
+.contacts_map{
+    width: 100%;
+    margin: 0 auto;
+}
+.contacts_socialm{ 
+ bottom: 43px;
+    position: absolute;
+    z-index: 1000;
+       display: flex;
+     left:50%; 
+    margin-left:-490px;
+  
+    
+}
+.socialm_inner{
+    display:flex;
+ background-color: #cb5ef4;
+
+ border-radius: 60px;
+  width: 980px;
+  height: 108px;
+  
+}
+.socialm_items{
+    margin: 9px 114px 8px 0px;
+}
+.socialm_items:first-child{
+    margin-left: 34px;
+    
+}
+
+#map{
+    height: 1006px;
+}
+.footer{
+    padding-top: 50px;
+    background-color: #322f2f;
+    height: 173px;
+    width:100%;
+}
+.footer_nav{
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    
+}
+.ftnav_link{
+    display:inline-block;
+    vertical-align:top;
+    margin-right: 60px;
+    position:relative;
+    color:#afaeb0;
+    text-decoration: none;
+    transition: color .1s linear;
+    
+}
+.ftnav_link:hover{
+    color:white;
+}
+.copy{
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight:400; 
+}
+
+
+@media (max-width:1680px){
+    /*first screen*/
+    body{
+        font-size:16px;
+    line-height: 1.4; 
+    }
+       .container {
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+    
+      }
+   
+    .header_number{
+    
+    font-size: 18px;
+    padding: 12px ; 
+    }
+    
+    .nav_link{
+    margin:0 50px;
+    
+    }
+    .intro_title{
+  
+    font-size: 50px;
+     line-height: 1.1; 
+     }
+      .intro_undertitle{
+       margin: 4px;
+    font-size: 25px;
+    
+     }
+    .dots_inner{
+   
+        bottom:10px;
+    }
+    .dots_item {
+    height :18px;
+    width :18px;
+ 
+}
+
+    .btn {
+    padding: 13px;
+   
+    font-size: 18px;
+    margin: 18px;
+
+    }
+/*why we*/
+    
+  .section
+    {  
+    padding:20px 0px 60px 0px;
+    
+    }
+    .section_head
+    {
+   width: 100%;
+    max-width: 470px;
+    margin-bottom: 30px;
+    }
+    .section_header{
+        
+    font-size: 32px;
+    padding: 6px ; 
+    
+     }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1366px){
+    body{
+        font-size:16px;
+    line-height: 1.4; 
+    }
+   
+}
+
+@media (max-width:990px){
+    body{
+        font-size:16px;
+    line-height: 1.4; 
+    }
+   
+}
+
+@media (max-width:575px){
+    body{
+        font-size:16px;
+    line-height: 1.4; 
+    }
+
+
+}
